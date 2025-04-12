@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Translate App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Translate App</h2>
+    <div class="translate-box">
+      <div class="column">
+        <textarea id="inputText" placeholder="Matnni kiriting..."></textarea>
+        <select id="fromLang">
+          <option value="en">Inglizcha</option>
+          <option value="uz">O‘zbekcha</option>
+          <option value="ru">Ruscha</option>
+          <option value="es">Ispancha</option>
+          <option value="fr">Fransuzcha</option>
+          <option value="de">Nemischa</option>
+          <option value="it">Italyancha</option>
+        </select>
+      </div>
+
+      <div class="column">
+        <textarea id="outputText" placeholder="Tarjima natijasi..." readonly></textarea>
+        <div class="speaker">
+        <button id="speak">🔊</button>
+    </div>
+        <select id="toLang">
+          <option value="uz">O‘zbekcha</option>
+          <option value="en">Inglizcha</option>
+          <option value="ru">Ruscha</option>
+          <option value="es">Ispancha</option>
+          <option value="fr">Fransuzcha</option>
+          <option value="de">Nemischa</option>
+          <option value="it">Italyancha</option>
+        </select>
+      </div>
+    </div>
+
+    <button id="Translate" onclick="translateText()">Tarjima qilish</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
